@@ -19,7 +19,8 @@ frontend_url = os.getenv(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        frontend_url,
+        "http://localhost:5173",
+        "https://minesweeper-pvp-frontend.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
